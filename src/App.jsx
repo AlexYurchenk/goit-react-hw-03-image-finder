@@ -86,10 +86,10 @@ const App = () => {
     <>
       <Searchbar onSearch={onChangeQuery} />
 
-      {(images.length < 1 && !isLoading && !error) && (
+      {images.length < 1 && !isLoading && !error && (
         <Message>
-          <h2>The gallery is empty 🙁</h2>
-          <p>Use search field!</p>
+          <h2>The gallery is empty</h2>
+          <p>Use search!</p>
         </Message>
       )}
 
